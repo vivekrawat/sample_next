@@ -1,3 +1,4 @@
+import '@/app/ui/global.css';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +6,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="flex flex-col">
+          {/* <div>gora pakora</div> */}
+          <div>{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
